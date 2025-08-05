@@ -1,0 +1,28 @@
+{
+  "status": "success",
+  "data": {
+    "users": [
+      {
+        "id": 1,
+        "name": "김철수",
+        "email": "kim@example.com",
+        "profile": {
+          "age": 25,
+          "skills": ["Flutter", "Dart", "Firebase"],
+          "projects": [
+            {
+              "name": "쇼핑몰 앱",
+              "duration": "3개월",
+              "technologies": ["Flutter", "Node.js"]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "pagination": {
+    "currentPage": 1,
+    "totalPages": 5,
+    "hasNext": true
+  }
+}
