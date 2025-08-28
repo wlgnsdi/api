@@ -1,0 +1,326 @@
+{
+  "status": "success",
+  "timestamp": "2024-01-15T10:30:00Z",
+  "pagination": {
+    "currentPage": 1,
+    "totalPages": 5,
+    "totalItems": 47,
+    "itemsPerPage": 10
+  },
+  "data": {
+    "orders": [
+      {
+        "orderId": "ORD-2024-001",
+        "orderDate": "2024-01-15T09:15:30Z",
+        "status": "delivered",
+        "customer": {
+          "customerId": "CUST-12345",
+          "name": "김민준",
+          "email": "minjun.kim@email.com",
+          "phone": "010-1234-5678",
+          "address": {
+            "street": "테헤란로 427",
+            "city": "서울시 강남구",
+            "zipCode": "06158",
+            "country": "대한민국",
+            "isDefault": true
+          },
+          "membershipLevel": "GOLD",
+          "joinDate": "2022-03-15"
+        },
+        "items": [
+          {
+            "productId": "PROD-001",
+            "name": "갤럭시 S24 Ultra",
+            "category": "스마트폰",
+            "brand": "삼성",
+            "price": 1398000,
+            "quantity": 1,
+            "discount": {
+              "type": "percentage",
+              "value": 10,
+              "amount": 139800
+            },
+            "options": {
+              "color": "티타늄 블랙",
+              "storage": "256GB",
+              "warranty": "2년"
+            },
+            "seller": {
+              "sellerId": "SELLER-001",
+              "name": "삼성전자 공식스토어",
+              "rating": 4.9
+            }
+          },
+          {
+            "productId": "PROD-002",
+            "name": "갤럭시 버즈3 Pro",
+            "category": "이어폰",
+            "brand": "삼성",
+            "price": 299000,
+            "quantity": 1,
+            "discount": {
+              "type": "fixed",
+              "value": 50000,
+              "amount": 50000
+            },
+            "options": {
+              "color": "실버",
+              "warranty": "1년"
+            },
+            "seller": {
+              "sellerId": "SELLER-001",
+              "name": "삼성전자 공식스토어",
+              "rating": 4.9
+            }
+          }
+        ],
+        "payment": {
+          "method": "credit_card",
+          "cardInfo": {
+            "cardType": "VISA",
+            "lastFourDigits": "1234",
+            "installment": 0
+          },
+          "amounts": {
+            "subtotal": 1697000,
+            "discount": 189800,
+            "shipping": 0,
+            "tax": 150720,
+            "total": 1657920
+          }
+        },
+        "shipping": {
+          "method": "express",
+          "carrier": "CJ대한통운",
+          "trackingNumber": "123456789012",
+          "estimatedDelivery": "2024-01-16T18:00:00Z",
+          "actualDelivery": "2024-01-16T14:30:00Z",
+          "address": {
+            "recipient": "김민준",
+            "phone": "010-1234-5678",
+            "street": "테헤란로 427",
+            "city": "서울시 강남구",
+            "zipCode": "06158",
+            "country": "대한민국",
+            "deliveryInstructions": "경비실에 맡겨주세요"
+          }
+        },
+        "reviews": [
+          {
+            "productId": "PROD-001",
+            "rating": 5,
+            "comment": "정말 만족스러운 제품입니다!",
+            "reviewDate": "2024-01-20T15:30:00Z",
+            "helpful": 12
+          }
+        ]
+      },
+      {
+        "orderId": "ORD-2024-002",
+        "orderDate": "2024-01-14T14:22:15Z",
+        "status": "processing",
+        "customer": {
+          "customerId": "CUST-67890",
+          "name": "이서연",
+          "email": "seoyeon.lee@email.com",
+          "phone": "010-9876-5432",
+          "address": {
+            "street": "강남대로 364",
+            "city": "서울시 강남구",
+            "zipCode": "06292",
+            "country": "대한민국",
+            "isDefault": true
+          },
+          "membershipLevel": "SILVER",
+          "joinDate": "2023-07-20"
+        },
+        "items": [
+          {
+            "productId": "PROD-003",
+            "name": "맥북 프로 14인치",
+            "category": "노트북",
+            "brand": "애플",
+            "price": 2690000,
+            "quantity": 1,
+            "discount": {
+              "type": "coupon",
+              "value": 200000,
+              "amount": 200000,
+              "couponCode": "WELCOME200"
+            },
+            "options": {
+              "color": "스페이스 그레이",
+              "memory": "16GB",
+              "storage": "512GB SSD",
+              "warranty": "1년"
+            },
+            "seller": {
+              "sellerId": "SELLER-002",
+              "name": "애플 공식 리셀러",
+              "rating": 4.8
+            }
+          },
+          {
+            "productId": "PROD-004",
+            "name": "매직 마우스",
+            "category": "액세서리",
+            "brand": "애플",
+            "price": 99000,
+            "quantity": 1,
+            "discount": null,
+            "options": {
+              "color": "화이트",
+              "connectivity": "블루투스"
+            },
+            "seller": {
+              "sellerId": "SELLER-002",
+              "name": "애플 공식 리셀러",
+              "rating": 4.8
+            }
+          }
+        ],
+        "payment": {
+          "method": "bank_transfer",
+          "bankInfo": {
+            "bankName": "국민은행",
+            "accountNumber": "***-**-****-***"
+          },
+          "amounts": {
+            "subtotal": 2789000,
+            "discount": 200000,
+            "shipping": 3000,
+            "tax": 258900,
+            "total": 2850900
+          }
+        },
+        "shipping": {
+          "method": "standard",
+          "carrier": "한진택배",
+          "trackingNumber": null,
+          "estimatedDelivery": "2024-01-18T18:00:00Z",
+          "actualDelivery": null,
+          "address": {
+            "recipient": "이서연",
+            "phone": "010-9876-5432",
+            "street": "강남대로 364",
+            "city": "서울시 강남구",
+            "zipCode": "06292",
+            "country": "대한민국",
+            "deliveryInstructions": "부재시 택배함에 보관"
+          }
+        },
+        "reviews": []
+      },
+      {
+        "orderId": "ORD-2024-003",
+        "orderDate": "2024-01-13T11:45:20Z",
+        "status": "cancelled",
+        "customer": {
+          "customerId": "CUST-11111",
+          "name": "박지호",
+          "email": "jiho.park@email.com",
+          "phone": "010-5555-7777",
+          "address": {
+            "street": "역삼로 123",
+            "city": "서울시 강남구",
+            "zipCode": "06234",
+            "country": "대한민국",
+            "isDefault": false
+          },
+          "membershipLevel": "BRONZE",
+          "joinDate": "2024-01-10"
+        },
+        "items": [
+          {
+            "productId": "PROD-005",
+            "name": "다이슨 V15 무선청소기",
+            "category": "가전제품",
+            "brand": "다이슨",
+            "price": 899000,
+            "quantity": 1,
+            "discount": {
+              "type": "seasonal",
+              "value": 15,
+              "amount": 134850
+            },
+            "options": {
+              "color": "골드",
+              "attachments": ["틈새 도구", "매트리스 도구", "소프트 브러시"]
+            },
+            "seller": {
+              "sellerId": "SELLER-003",
+              "name": "다이슨 공식몰",
+              "rating": 4.7
+            }
+          }
+        ],
+        "payment": {
+          "method": "mobile_payment",
+          "mobileInfo": {
+            "provider": "카카오페이",
+            "transactionId": "KP-2024-001-789"
+          },
+          "amounts": {
+            "subtotal": 899000,
+            "discount": 134850,
+            "shipping": 0,
+            "tax": 76415,
+            "total": 840565
+          }
+        },
+        "shipping": {
+          "method": "express",
+          "carrier": null,
+          "trackingNumber": null,
+          "estimatedDelivery": null,
+          "actualDelivery": null,
+          "address": {
+            "recipient": "박지호",
+            "phone": "010-5555-7777",
+            "street": "역삼로 123",
+            "city": "서울시 강남구",
+            "zipCode": "06234",
+            "country": "대한민국",
+            "deliveryInstructions": null
+          }
+        },
+        "reviews": [],
+        "cancellation": {
+          "reason": "고객 변심",
+          "cancelledAt": "2024-01-13T16:20:00Z",
+          "refundStatus": "completed",
+          "refundAmount": 840565
+        }
+      }
+    ],
+    "summary": {
+      "totalOrders": 3,
+      "totalRevenue": 5349385,
+      "averageOrderValue": 1783128,
+      "statusBreakdown": {
+        "delivered": 1,
+        "processing": 1,
+        "cancelled": 1,
+        "pending": 0
+      },
+      "topCategories": [
+        {
+          "category": "스마트폰",
+          "count": 1,
+          "revenue": 1258200
+        },
+        {
+          "category": "노트북",
+          "count": 1,
+          "revenue": 2490000
+        },
+        {
+          "category": "가전제품",
+          "count": 1,
+          "revenue": 764150
+        }
+      ]
+    }
+  }
+}
